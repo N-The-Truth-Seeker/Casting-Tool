@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <title>真実の探求者配役ツール</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>真実の探求者配役ツール</h1>
+    <p>参加者の数を選択してください（3人から10人）</p>
+    <select id="playerCount">
+      <option value="3">3人</option>
+      <option value="4">4人</option>
+      <option value="5">5人</option>
+      <option value="6">6人</option>
+      <option value="7">7人</option>
+      <option value="8">8人</option>
+      <option value="9">9人</option>
+      <option value="10">10人</option>
+    </select>
+    <div class="button-container">
+      <button onclick="startGame()">配役開始</button>
+      <button onclick="nextPlayer()" id="nextButton" disabled>次へ</button>
+    </div>
+    <div id="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
