@@ -80,3 +80,25 @@ body {
 .explorer {
   color: rgb(0, 213, 255);
 }
+/* スマートフォン用のスタイル */
+@media only screen and (max-width: 480px) {
+  .container {
+    width: 100%; /* コンテナの幅を100%に変更 */
+    padding: 20px; /* パディングの調整 */
+  }
+  h1 {
+    font-size: 24px; /* 見出しのフォントサイズを調整 */
+  }
+  p {
+    font-size: 16px; /* 段落のフォントサイズを調整 */
+  }
+  select {
+    font-size: 14px; /* セレクトボックスのフォントサイズを調整 */
+  }
+  button {
+    font-size: 14px; /* ボタンのフォントサイズを調整 */
+  }
+  #result {
+    font-size: 16px; /* 結果表示のフォントサイズを調整 */
+  }
+}
