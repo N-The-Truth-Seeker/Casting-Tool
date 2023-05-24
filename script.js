@@ -35,7 +35,7 @@ function displayRole() {
     timer = setTimeout(function() {
       hideRole();
       showNextMessage();
-    }, 5000);
+    }, 4000);
 }
 
 function hideRole() {
