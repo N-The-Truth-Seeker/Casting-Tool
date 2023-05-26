@@ -80,6 +80,12 @@ body {
 .explorer {
   color: rgb(0, 213, 255);
 }
+
+button:disabled {
+  background-color: #cccccc;
+  cursor: default;
+}
+
 /* スマートフォン用のスタイル */
 @media only screen and (max-width: 480px) {
   .container {
