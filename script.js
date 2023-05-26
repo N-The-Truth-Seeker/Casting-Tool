@@ -20,7 +20,6 @@ function startGame() {
   var werewolfIndex = Math.floor(Math.random() * playerCount);
   players[werewolfIndex] = '嘘つき';
   displayRole();
-  document.getElementById('nextButton').disabled = false;
   document.getElementById('startButton').disabled = true; // 配役開始ボタンを無効化する
 }
 
@@ -30,7 +29,8 @@ function displayRole() {
   var currentPlayer = players[currentIndex];
   
   var roleText = document.createElement('span');
-  roleText.textContent = 'プレイヤー ' + (currentIndex + 1) + ' は「' + currentPlayer + '」です.';
+  roleText.textContent = 'プレイヤー ' + (currentIndex + 1) + ' は「' + currentPlayer + '」です。';
+  document.getElementById('nextButton').disabled = true;
 
   if (currentPlayer === '嘘つき') {
     roleText.classList.add('lying');
@@ -55,6 +55,7 @@ function showNextMessage() {
   var resultDiv = document.getElementById('result');
   if (currentIndex < players.length - 1) {
     resultDiv.innerHTML = '次の人に渡してください。';
+    document.getElementById('nextButton').disabled = false;
   } else {
     resultDiv.innerHTML = '配役終了';
     document.getElementById('nextButton').disabled = true;
