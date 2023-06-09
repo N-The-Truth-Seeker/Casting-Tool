@@ -25,6 +25,38 @@
       position: relative;
       /* 他のスタイル */
     }
+
+    /* スマートフォン用のスタイル */
+    @media only screen and (max-width: 480px) {
+      .container {
+        width: 100%;
+        padding: 20px;
+      }
+      .container2 {
+        width: 100%;
+        padding: 20px;
+        left: 0;
+      }
+      .container2 h1,
+      .container2 p {
+        font-size: 14px;
+      }
+      h1 {
+        font-size: 24px;
+      }
+      p {
+        font-size: 16px;
+      }
+      select {
+        font-size: 14px;
+      }
+      button {
+        font-size: 14px;
+      }
+      #result {
+        font-size: 16px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -51,8 +83,7 @@
   </div>
 
   <script src="script.js"></script>
-</body>
-<body>
+
   <div class="container2">
     <h1>使用方法</h1>
     <p>１：適当な人がスマホやpcでこのサイトを読み取ります <br>
@@ -61,6 +92,5 @@
       ４：渡された人は「次へ」ボタンを押し、自分の役職を確認し、「次の人へ」が表示されるので次の人へ渡します <br>
       ５：以上を全員が配役を完了するまで繰り返します。</p>
   </div>
-  
 </body>
 </html>
