@@ -23,7 +23,7 @@ body {
 .container2 {
   flex-direction: column;
   align-items: center;
-  margin-top: 150px; /* 好みに応じて適切なマージンを指定してください */
+  margin-top: 50px; /* 好みに応じて適切なマージンを指定してください */
   
 }
 
