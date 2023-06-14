@@ -21,25 +21,16 @@ body {
 }
 
 .container2 {
-  width: 400px;
-  padding: 40px;
-  background-color: #ffffff;
-  border-radius: 10px;
-  position: relative;
-  left: 50px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  margin-top: 350px; /* 好みに応じて適切なマージンを指定してください */
+  
 }
 
 .container2 h1,
 .container2 p {
   font-size: 15px;
 }
-
-
 
 h1 {
   color: #333333;
@@ -87,48 +78,21 @@ button:disabled {
   color: #333333;
   text-align: center;
 }
-#result {
-margin-top: 20px;
-font-size: 20px;
-color: #333333;
-text-align: center;
-}
 
 .lying {
-color: red;
+  color: red;
 }
 
 .explorer {
-color: rgb(0, 213, 255);
+  color: rgb(0, 213, 255);
 }
 
 button:disabled {
-background-color: #cccccc;
-cursor: default;
+  background-color: #cccccc;
+  cursor: default;
 }
 
 /* スマートフォン用のスタイル */
-@media only screen and (max-width: 480px) {
-.container {
-  width: 100%; /* コンテナの幅を100%に変更 */
-  padding: 20px; /* パディングの調整 */
-}
-h1 {
-  font-size: 24px; /* 見出しのフォントサイズを調整 */
-}
-p {
-  font-size: 16px; /* 段落のフォントサイズを調整 */
-}
-select {
-  font-size: 14px; /* セレクトボックスのフォントサイズを調整 */
-}
-button {
-  font-size: 14px; /* ボタンのフォントサイズを調整 */
-}
-#result {
-  font-size: 16px; /* 結果表示のフォントサイズを調整 */
-}
-}
 @media only screen and (max-width: 480px) {
   .container {
     width: 100%;
@@ -137,14 +101,13 @@ button {
   .container2 {
     width: 100%;
     padding: 20px;
-    left: 0;
   }
   .container2 h1,
   .container2 p {
     font-size: 14px;
   }
   h1 {
-    font-size: 24px;
+    font-size: 28px;
   }
   p {
     font-size: 16px;
@@ -160,3 +123,32 @@ button {
   }
 }
 
+#startButton {
+  padding: 12px 24px;
+  font-size: 18px;
+  margin: 10px;
+  background-color: #007BFF;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.time-container {
+  display: flex;
+}
+
+.time {
+  margin: .2rem;
+  background-color: #007BFF;
+  border-radius: 1rem;
+  padding: 2rem;
+  color: #FFFFFF;
+}
+
+#hour,
+#min,
+#sec {
+  font-size: 3rem;
+  margin-right: 1rem;
+}
